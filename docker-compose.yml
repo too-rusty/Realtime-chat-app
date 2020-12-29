@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  client:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+    working_dir: /app
+    ports:
+      - 3000:80
+    depends_on:
+      - server
+
+  server:
+    build: ./backend
+    volumes:
+      - ./backend:/usr/src/app # for seeing live code changes
+    ports:
+      - 4000:4000 # host:container
+    working_dir: /usr/src/app
+    command: >
+      bash -c "
+      go get github.com/go-redis/redis
+      && go get github.com/gorilla/websocket
+      && go run *.go"
+    depends_on:
+      - db
+
+  db:
+    image: redis
+    ports:
+      - 6378:6379
+    volumes:
+      - redis-data:/data/db
+volumes:
+  redis-data:
+    driver: local
+
+# https://blog.golang.org/docker
+# check about hot reloading in go
+# why the go run call blocks
+# and how is it diff
+# diff bwn CMD and RUN in Dockerfile
+# https://www.youtube.com/watch?v=Sm8GbC02MlE
+# what is nginx
+# dockerignore, dont copy the build file
