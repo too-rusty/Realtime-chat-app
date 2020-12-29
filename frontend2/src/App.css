@@ -1,0 +1,17 @@
+.outerContainerrr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  
+  /* background-color: #dfdccf; */
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  
+  /* background-color: #dfdccf; */
+}

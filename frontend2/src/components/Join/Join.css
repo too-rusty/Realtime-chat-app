@@ -1,0 +1,84 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainerrr {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  align-items: center;
+  /* background-color: #a3a4a8; */
+}
+
+.joinInnerContainerrr {
+  width: 20%;
+}
+
+.joinInputtt {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.headinggg {
+  color: black;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(14, 13, 13);
+}
+
+.headinggg2 {
+  color: black;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  width: 100%;
+  background: #b5e06f;
+  border-bottom: 2px solid rgb(14, 13, 13);
+  border : 0.1em solid black;
+}
+
+.buttonnn {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+
+    border : 0.1em solid black;
+    width: 100%;
+}
+
+.mttt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainerrr {
+    height: 100%;
+  }
+
+  .joinInnerContainerrr {
+    width: 90%;
+  }
+
+
+}
+
+button:focus {
+  outline: 0;
+}

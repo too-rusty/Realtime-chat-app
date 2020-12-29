@@ -31,3 +31,6 @@ https://stackoverflow.com/questions/56374921/how-to-address-backend-host-with-ax
 
 
 https://stackoverflow.com/questions/22844806/how-to-change-my-git-username-in-terminal/36782014
+
+
+https://stackoverflow.com/questions/29820791/git-ignore-node-modules-folder-everywhere

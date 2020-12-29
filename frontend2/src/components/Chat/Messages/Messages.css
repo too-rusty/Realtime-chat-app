@@ -1,0 +1,16 @@
+.messages {
+    padding: 5% 0;
+    overflow: auto;
+    flex: auto;
+}
+.messagesWrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    height: 300px;
+    overflow: scroll;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    margin-right: 5rem;
+  }
+  
