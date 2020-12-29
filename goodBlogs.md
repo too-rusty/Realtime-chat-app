@@ -28,3 +28,6 @@ https://firehydrant.io/blog/developer-a-go-app-with-docker-compose/
 https://www.youtube.com/watch?v=0B2raYYH2fE
 
 https://stackoverflow.com/questions/56374921/how-to-address-backend-host-with-axios-when-frontend-and-backend-are-in-virtual
+
+
+https://stackoverflow.com/questions/22844806/how-to-change-my-git-username-in-terminal/36782014
