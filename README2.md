@@ -44,8 +44,8 @@ more docker things
 redis
 key value storage and its importance
 more and more and more golang
-
-
+microservices architecture
+kubernetes and deployments
 
 
 ### Golang stuff todo
@@ -61,7 +61,7 @@ more and more and more golang
 9. Golang book on concurrency etc
 10. Multi producers and consumers
 11. Marshal and unmarshal
-
+12. Learn to structure golang projects the right way
 
 https://stackoverflow.com/questions/56374921/how-to-address-backend-host-with-axios-when-frontend-and-backend-are-in-virtual
 
