@@ -28,26 +28,3 @@ https://firehydrant.io/blog/developer-a-go-app-with-docker-compose/
 https://www.youtube.com/watch?v=0B2raYYH2fE
 
 https://stackoverflow.com/questions/56374921/how-to-address-backend-host-with-axios-when-frontend-and-backend-are-in-virtual
-
-
-https://stackoverflow.com/questions/22844806/how-to-change-my-git-username-in-terminal/36782014
-
-
-https://stackoverflow.com/questions/29820791/git-ignore-node-modules-folder-everywhere
-
-
-
-https://stackoverflow.com/questions/56374921/how-to-address-backend-host-with-axios-when-frontend-and-backend-are-in-virtual
-
-
-https://xiaolishen.medium.com/develop-in-docker-a-node-backend-and-a-react-front-end-talking-to-each-other-5c522156f634
-
-
-https://stackoverflow.com/questions/50139880/react-app-in-a-docker-container-cannot-access-api-in-a-docker-container-on-a/50146547
-
-
-
-https://stackoverflow.com/questions/63136530/how-to-connect-api-with-react-app-through-docker
-
-
-https://stackoverflow.com/questions/50855368/how-to-make-rest-calls-between-frontend-and-backend-using-docker-containers

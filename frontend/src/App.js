@@ -9,7 +9,7 @@ import './App.css'
 
 
 const Home = () => {
-  console.log(`http://${process.env.REACT_APP_SERVER_URL}/api/set_room`)
+  console.log(`${process.env.REACT_APP_SERVER_URL}`)
   return (
     <div className="outerContainerrr">
       <h1 >Welcome</h1>
