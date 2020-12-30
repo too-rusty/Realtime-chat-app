@@ -7,7 +7,7 @@ services:
       - ./frontend:/app
     working_dir: /app
     ports:
-      - 3000:80
+      - 80:80
     depends_on:
       - server
 
@@ -44,3 +44,5 @@ volumes:
 # https://www.youtube.com/watch?v=Sm8GbC02MlE
 # what is nginx
 # dockerignore, dont copy the build file
+
+# nginx configured so 3000 changes to 80 and then making it 80 again for http default
