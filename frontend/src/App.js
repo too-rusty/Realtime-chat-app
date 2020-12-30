@@ -51,6 +51,32 @@ const About = () => {
   )
 }
 
+const Future = () => {
+  return (
+    <div className="outerContainerrr">
+      <div>
+      <body>
+        <p>
+        There are many ways, this site can evolve.
+        </p>
+        <p>
+        I am inclined towards an AI-powered solution.
+        </p>
+        <p>
+        Apart from the registered listeners, we will have AI chatbots.
+        </p>
+        <p>
+        With custom features like mood monitoring, suggestions etc.
+        </p>
+        <p>
+        Now wouldn't that be awesome.
+        </p>
+      </body>
+      </div>
+    </div>
+  )
+}
+
 const Contact = () => {
   return (
     <div className="outerContainerrr">
@@ -89,6 +115,7 @@ const App = () => (
     <NavLink to="/join" exact activeStyle={{color:'green', borderBottom: 'solid 3px #fff'}}>Join </NavLink>
     <NavLink to="/create" exact activeStyle={{color:'green', borderBottom: 'solid 3px #fff'}}> Create</NavLink>
     <NavLink to="/contact" exact activeStyle={{color:'green', borderBottom: 'solid 3px #fff'}}> Contact</NavLink>
+    <NavLink to="/future" exact activeStyle={{color:'green', borderBottom: 'solid 3px #fff'}}> Future</NavLink>
     </div>
     <Route path="/" exact component={Home}/>
     <Route path="/join" exact component={Join}/>
@@ -96,6 +123,7 @@ const App = () => (
     <Route path="/create" exact component={Create}/>
     <Route path="/about" exact component={About}/>
     <Route path="/contact" exact component={Contact}/>
+    <Route path="/future" exact component={Future}/>
   </Router>
 )
 
