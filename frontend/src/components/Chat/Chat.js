@@ -13,7 +13,7 @@ import Messages from './Messages/Messages'
 async function roomExists(room) {
     //LOGIC to CHECK if ROOM EXISTS
     // let ret= false
-    let ret = await axios.get('http://localhost:4000/api/room_exists', {params: {room : room} } )
+    let ret = await axios.get(`http://${process.env.REACT_APP_SERVER_URL}/api/room_exists`, {params: {room : room} } )
 
     return ret.data
 }
@@ -21,7 +21,7 @@ async function roomExists(room) {
 async function getChatHistory(room){
     //TODO
 
-    let val = await axios.get('http://localhost:4000/api/room_history', {params: {room : room} } )
+    let val = await axios.get(`http://${process.env.REACT_APP_SERVER_URL}/api/room_history`, {params: {room : room} } )
 
     // console.log("valll",val)
     let z=[]
@@ -32,7 +32,7 @@ async function getChatHistory(room){
 }
 
 async function notifyListeners(room){
-    axios.get('http://localhost:4000/api/notify', {params: {room : room} })
+    axios.get(`http://${process.env.REACT_APP_SERVER_URL}/api/notify`, {params: {room : room} })
 }
 
 function postChatHistory(room, messages){
@@ -55,7 +55,7 @@ class Chat extends React.Component {
             exists : null,
             notify:notify,
             created: created,
-            client : new WebSocket('ws://localhost:4000')
+            client : new WebSocket(`ws://${process.env.REACT_APP_SERVER_URL}:4000`)
         }
         this.state.client.onopen = () => {
             console.log('WebSocket Client Connected');

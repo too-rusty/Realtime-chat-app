@@ -42,7 +42,7 @@ class Join extends React.Component {
       //push the room to db
       // possibly collision will ocuur so handle it later
 
-      axios.get('http://localhost:4000/api/set_room', {params: {room : this.state.room} } )
+      axios.get(`http://${process.env.REACT_APP_SERVER_URL}/api/set_room`, {params: {room : this.state.room} } )
           .then(function (response) {
             // handle success
             // console.log('res',response);
@@ -111,24 +111,6 @@ let listeners = [
     {name:"Jibran", about:"I love reading awesome books , currently into anime and stuff"},
 ]
 
-// const Listeners = ({ messages }) => {
-//     const messagesEndRef = useRef(null);
-//     const scrollToBottom = () => {
-//       messagesEndRef.current.scrollIntoView({ behavior: "smooth",block: 'end',
-//       inline: 'nearest' });
-//     };
-//     useEffect(scrollToBottom, [messages]);
-  
-//     return (
-//       <div className="messagesWrapper">
-//         {messages.map(message => (
-//           <span key={message}>{message.about}</span>
-//         ))}
-//         <div ref={messagesEndRef} />
-//       </div>
-//     );
-//   };
-
 const Listeners = ({messages}) => {
     
     const messagesEndRef = useRef(null)
@@ -144,25 +126,6 @@ const Listeners = ({messages}) => {
       )
 }
 
-// const Listeners = () => (
-    
-//     <div>
-//         <ScrollableFeed>
-//         {  
-//             listeners.map( 
-//                 (message,i) =>
-//                 (
-//                     <div key={i}>
-//                     <Listener name={message['name']} 
-//                             about={message['about']}/>
-//                     </div> 
-//                 )
-//             )
-//         }
-//         </ScrollableFeed>
-//     </div>
-
-// )
 
 const Listener = ({name,about}) => (
     <div  >
