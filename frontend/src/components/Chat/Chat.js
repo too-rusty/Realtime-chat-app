@@ -55,7 +55,7 @@ class Chat extends React.Component {
             exists : null,
             notify:notify,
             created: created,
-            client : new WebSocket(`ws://${process.env.REACT_APP_SERVER_URL}:4000`)
+            client : new WebSocket(`ws://${process.env.REACT_APP_SERVER_URL}`)
         }
         this.state.client.onopen = () => {
             console.log('WebSocket Client Connected');
