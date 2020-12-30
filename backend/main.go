@@ -72,11 +72,17 @@ func main() {
 }
 
 func notify(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 	room_id := r.URL.Query().Get("room")
 	go notifyUsers(room_id)
 }
 
 func setRoom(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 	room_id := r.URL.Query().Get("room")
 	//chck in rdb
 	redisClient.Set(ctx, room_id, "", time.Hour*10) // some expiry for the room
@@ -84,6 +90,9 @@ func setRoom(w http.ResponseWriter, r *http.Request) {
 }
 
 func getRoomChat(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 	room_id := r.URL.Query().Get("room")
 
 	//chck in rdb
@@ -121,6 +130,9 @@ func getRoomChat(w http.ResponseWriter, r *http.Request) {
 }
 
 func roomExists(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 	room_id := r.URL.Query().Get("room")
 	//chck in rdb
 
