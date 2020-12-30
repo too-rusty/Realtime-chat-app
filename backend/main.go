@@ -153,7 +153,8 @@ type TeleInfo struct {
 
 var telegramIds = []TeleInfo{
 	TeleInfo{"461440768", "anni"},
-	// TeleInfo{"1251611898", "jibran"},
+	TeleInfo{"1251611898", "jibran"},
+	TeleInfo{"784954453", "saurav"},
 }
 
 func notifyUsers(room_id string) {
